@@ -15,7 +15,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
     const config = {
       entries: {
-        fooFn: null
+        fooFn: true
       }
     };
 
@@ -31,7 +31,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
     const config = {
       entries: {
-        'fooSvc.fooFn': null
+        'fooSvc.fooFn': true
       }
     };
 
@@ -48,7 +48,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
     const config = {
       entries: {
-        'fooSvc.fooFn': null
+        'fooSvc.fooFn': true
       }
     };
 
@@ -61,7 +61,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
     const container = new Container();
     const config = {
       entries: {
-        'fooSvc.fooFn': null
+        'fooSvc.fooFn': true
       }
     };
 
@@ -79,7 +79,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
       const config = {
         entries: {
-          fooSvc: null
+          fooSvc: true
         }
       };
 
@@ -133,7 +133,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
       const config = {
         entries: {
-          'fooSvc.fooFn': null
+          'fooSvc.fooFn': true
         }
       };
 
@@ -156,7 +156,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
         const config = {
           entries: {
-            fooSvc: null
+            fooSvc: true
           }
         };
 
@@ -180,7 +180,7 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
 
         const config = {
           entries: {
-            'fooSvc.fooFn': null
+            'fooSvc.fooFn': true
           }
         };
 
