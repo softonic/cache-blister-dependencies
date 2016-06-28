@@ -70,6 +70,23 @@ describe('cacheBlisterDependencies({ container, cacheClient, config, decorator }
     }).toThrow();
   });
 
+  it('should ignore dependencies with falsy configuration values', () => {
+    const container = new Container();
+    spyOn(container, 'extend');
+
+    const config = {
+      entries: {
+        'fooSvc.fooFn': false,
+        'barSvc': null,
+        'bazSvc': undefined
+      }
+    };
+
+    cacheBlisterDependencies({ container, config });
+
+    expect(container.extend).not.toHaveBeenCalled();
+  });
+
   describe('the extended dependency', () => {
     it('should be cached using the given cache client', done => {
       const container = new Container();

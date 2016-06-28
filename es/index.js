@@ -37,6 +37,10 @@ export default function cacheBlisterDependencies({
   const defaultOptions = Object.assign({}, config.options, { cacheClient });
 
   Object.keys(config.entries).forEach(entryId => {
+    if (!config.entries[entryId]) {
+      return;
+    }
+
     let dependencyId = entryId;
     let methodName = null;
 
