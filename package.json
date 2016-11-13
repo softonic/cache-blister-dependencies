@@ -8,10 +8,10 @@
   "description": "Uses a configuration to cache all the specified services in a container",
   "license": "Apache-2.0",
   "main": "index.js",
-  "homepage": "https://stash.redtonic/projects/NODE/repos/cache-blister-dependencies",
+  "homepage": "https://github.com/softonic/cache-blister-dependencies",
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.redtonic:7999/projects/NODE/repos/cache-blister-dependencies.git"
+    "url": "git+https://github.com/softonic/cache-blister-dependencies.git"
   },
   "files": [
     "es",
