@@ -41,6 +41,6 @@
     "jasmine": "^2.4.1"
   },
   "dependencies": {
-    "make-cacheable": "^1.0.0"
+    "make-cacheable": "^2.0.1"
   }
 }
